@@ -4,7 +4,7 @@ import { delay, escapeRegex, getBase64Async, getStringHash, onlyUnique } from '.
 import { EdgeTtsProvider } from './edge.js';
 import { ElevenLabsTtsProvider } from './elevenlabs.js';
 import { SileroTtsProvider } from './silerotts.js';
-import { GptSovitsV2Provider } from './gpt-sovits-v2.js';
+import { GptSovitsV2Provider } from './GptSovitsV2Provider.js';
 import { CoquiTtsProvider } from './coqui.js';
 import { SystemTtsProvider } from './system.js';
 import { NovelTtsProvider } from './novel.js';
@@ -104,6 +104,8 @@ const ttsProviders = {
     System: SystemTtsProvider,
     VITS: VITSTtsProvider,
     XTTSv2: XTTSTtsProvider,
+    CosyVoice: CosyVoiceProvider,
+    GptSovitsV2: GptSovitsV2Provider,
 };
 let ttsProvider;
 let ttsProviderName;
